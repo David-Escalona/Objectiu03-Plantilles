@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>
+        Esta es mi primera plantilla
+        </h1>
+        <p>Mi nombre es: {{nombre_persona}} {{apellidos_persona}} {{momento_actual}}</p>
+        <p>Mi fecha de nacimiento es el: {{nacimiento_persona}}</p>
+        <p>Vivo en la ciudad de: {{ciudad_persona}}</p>
+        <p>La fecha de hoy es: {{ahora_persona}}</p>
+        <p>
+            <ul>
+                {% for ciclos_persona in ciclos %}
+                <li>{{ciclos_persona.capitalize}}</li>
+                {% endfor %}
+            </ul>
+        </p>
+    </body>
+</html>
